@@ -20,5 +20,8 @@
   "homepage": "https://github.com/mtilleman/Apple-Reseller#readme",
   "devDependencies": {
     "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.2"
   }
 }
