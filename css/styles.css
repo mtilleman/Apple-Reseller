@@ -1,14 +1,95 @@
-footer {
-  background-image: linear-gradient(#f4f4f4, white);
-  padding: 20px 0; }
+:root {
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  letter-spacing: 1px;
+  transition: 2s; }
+  body .row-content {
+    border-bottom: none; }
 
 .jumbotron {
   margin: 0;
-  padding: 30px;
+  padding: 0;
+  height: 33%;
   background-image: linear-gradient(to right, #c7c7c7, #f2f2f2, #ffffff);
-  color: white; }
+  color: white;
+  z-index: -1 !important;
+  position: relative; }
+  .jumbotron .carousel {
+    height: 33%; }
 
-.row-content {
-  padding: 50px 0;
-  border-bottom: 1px ridge;
-  min-height: 200px; }
+.navbar {
+  background-color: #1f1f1f; }
+  .navbar #mainNavbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: space-around; }
+  .navbar .searchBar {
+    padding: 0.25em 0.5em;
+    width: 300px;
+    border: none; }
+  .navbar .navbar-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; }
+
+.section {
+  background-color: white;
+  z-index: 10 !important;
+  position: relative; }
+  .section .row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px; }
+  .section .featureProductsSection {
+    background-color: #c4c4c4;
+    height: 50%;
+    text-align: center; }
+    .section .featureProductsSection .featureProducts {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 33px; }
+      .section .featureProductsSection .featureProducts .featureProductIcon {
+        background-color: coral;
+        width: 100px;
+        height: 100px; }
+  .section .recentlyAdded {
+    background-color: #e3e3e3;
+    height: auto; }
+  .section .discountProducts {
+    background-color: #c4c4c4;
+    height: auto; }
+  .section .slide {
+    background-color: coral;
+    width: 300px;
+    height: 300px;
+    margin: auto; }
+
+footer {
+  margin: 0;
+  padding: 0;
+  background-color: #1f1f1f; }
+  footer .container navBottom {
+    width: 100%; }
+  footer .navBottom a {
+    color: white;
+    bottom: 0; }
+  footer .navBottom a:hover {
+    color: #969696; }
+  footer .navBottom .contactLinks {
+    align-items: center; }
+  footer .navBottom .socialLinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: space-evenly; }

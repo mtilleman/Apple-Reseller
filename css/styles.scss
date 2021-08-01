@@ -1,29 +1,146 @@
-body {
+$color-almost-black: #1f1f1f;
+$placeHolder: coral;
 
+@mixin flexin() {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  :root {
+      margin: 0;
+      padding: 0;
+  }
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    letter-spacing: 1px;
+    transition: 2s;
+
+    .row-content{
+        border-bottom: none;
+    }
 }
 
 h1, h2, h3 {
 
 }
 
-header {
-
-}
-
-footer {
-    background-image: linear-gradient(rgb(244, 244, 244), white);
-    padding: 20px 0;
-}
 
 .jumbotron {
     margin: 0;
-    padding: 30px;
+    padding: 0;
+    height: 33%;
     background-image: linear-gradient(to right, #c7c7c7, #f2f2f2, #ffffff);
     color: white;
+    z-index: -1 !important;
+    position: relative;
+    
+    .carousel {
+        height: 33%;
+    }
 }
 
-.row-content {
-    padding: 50px 0;
-    border-bottom: 1px ridge;
-    min-height: 200px;
+.navbar {
+        background-color: $color-almost-black;
+        #mainNavbar {
+            @include flexin;
+            justify-content: space-around;
+        }
+        .searchBar {
+            padding: 0.25em 0.5em;
+            width: 300px;
+            border: none;
+        }
+        .navbar-nav {
+            @include flexin;
+
+        }
+}
+
+.section {
+    background-color: white;
+    z-index: 10 !important;
+    position: relative;
+
+
+    .row-content {
+        padding: 50px 0;
+        border-bottom: 1px ridge;
+        min-height: 200px;
+    }
+
+    .featureProductsSection {
+        background-color: rgb(196, 196, 196);
+        height: 50%;
+        text-align: center;
+
+        .featureProducts {
+            @include flexin;
+            margin-top: 33px;
+        
+        
+            .featureProductIcon {
+                background-color: $placeHolder;
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+
+    .recentlyAdded {
+        background-color: rgb(227, 227, 227);
+        height: auto;    }
+    
+    .discountProducts {
+        background-color: rgb(196, 196, 196);
+        height: auto;
+    }
+
+    .slide {
+        background-color: $placeHolder;
+        width: 300px;
+        height: 300px;
+        margin: auto;
+
+        .recentSlide {
+        }
+
+        .discountSlide {
+
+        }
+    }
+}
+
+
+footer {
+    margin: 0;
+    padding: 0;
+    background-color: $color-almost-black;
+    
+    .container navBottom {
+        width: 100%;
+    }
+
+    .navBottom {
+        a {
+            color: white;
+            bottom: 0;
+        }
+        a:hover {
+            color: rgb(150, 150, 150);
+        }
+            .contactLinks {
+                align-items: center;
+
+            }
+            .socialLinks {
+                @include flexin;
+                justify-content: space-evenly;
+            }
+    }
 }

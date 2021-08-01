@@ -28,6 +28,7 @@
     "parallelshell": "3.0.1"
   },
   "dependencies": {
-    "bootstrap": "^5.0.2"
+    "bootstrap": "^5.0.2",
+    "font-awesome": "^4.7.0"
   }
 }
